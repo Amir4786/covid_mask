@@ -1,7 +1,10 @@
 ipywidgets
 notebook
 ensure
-py-youtube
+uuid
+pandas
+numpy
+opencv-python
 
 
 # dev requirements
