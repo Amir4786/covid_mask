@@ -5,7 +5,17 @@ uuid
 pandas
 numpy
 opencv-python
-
+python-box
+torch
+requests
+Pillow
+torchvision
+tqdm
+matplotlib
+seaborn
+tensorboard
+keras
+tensorflow
 
 # dev requirements
 pytest

@@ -1,0 +1,7 @@
+artifacts_root: artifacts
+
+data_preprocessing:
+  root_dir: artifacts/data_preprocess
+  data_path: collected_data
+  saved_data_path: artifacts/preprocess/data
+  saved_target_path: artifacts/preprocess/target
