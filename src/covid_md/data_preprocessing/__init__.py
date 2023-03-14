@@ -1,1 +1,1 @@
-from covid_md.data_prepoocessing.data_prep import *
+from covid_md.data_preprocessing.data_prep import *
