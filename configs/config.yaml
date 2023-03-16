@@ -9,3 +9,6 @@ data_training:
   root_dir: artifacts/data_training
   data_path: artifacts/data_preprocess
 
+mask_detection:
+  root_dir: artifacts/data_training
+  face_classifier: haarcascade_frontalface_default.xml
