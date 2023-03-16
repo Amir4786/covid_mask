@@ -19,3 +19,7 @@ class DataTrainingConfig:
     epochs: int
     validation_split: float
     model: str
+@dataclass(frozen= True)
+class MaskDetectionConfig:
+    root_dir: Path
+    face_classifier: Path

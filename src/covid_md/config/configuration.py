@@ -1,5 +1,5 @@
 from covid_md.constant import *
-from covid_md.entity import (DataPreprocessingConfig, DataTrainingConfig)
+from covid_md.entity import (DataPreprocessingConfig, DataTrainingConfig, MaskDetectionConfig)
 from covid_md.utils import read_yaml, create_directories
 from pathlib import Path
 from covid_md import logger
@@ -37,3 +37,12 @@ class ConfigurationManager:
             model= params.model
         )
         return data_training_config
+    
+    def get_mask_detection_config(self)->MaskDetectionConfig:
+        config= self.config.mask_detection
+        create_directories([config.root_dir])
+        mask_detection_config= MaskDetectionConfig(
+            root_dir= config.root_dir,
+            face_classifier= config.face_classifier
+        )
+        return mask_detection_config
