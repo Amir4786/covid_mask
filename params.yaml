@@ -1,3 +1,9 @@
-IMG: 416
-BATCH: 15
-EPOCHS: 10
+training:
+  test_size: 0.1
+  monitor: 'val_loss'
+  verbose: 0
+  save_best_only: True
+  mode: 'auto'
+  epochs: 20
+  validation_split: 0.2
+  model: 'model-{epoch:03d}.model'

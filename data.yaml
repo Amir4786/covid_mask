@@ -1,5 +1,0 @@
-train: ../all_images/train_data/images
-val: ../all_images/test_data/images
-
-nc: 2
-names: ['MASK', 'NO MASK']

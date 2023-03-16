@@ -1,6 +1,0 @@
-artifacts_root: artifacts
-
-data_preprocessing:
-  root_dir: artifacts/data_preprocess
-  data_path: collected_data
-  preprocess_records: artifacts/data_preprocess
