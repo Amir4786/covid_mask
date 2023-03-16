@@ -16,6 +16,7 @@ seaborn
 tensorboard
 keras
 tensorflow
+scikit-learn
 
 # dev requirements
 pytest

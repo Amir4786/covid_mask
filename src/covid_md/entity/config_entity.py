@@ -6,3 +6,16 @@ class DataPreprocessingConfig:
     root_dir: Path
     data_path: Path
     preprocess_records: Path
+
+@dataclass(frozen=True)
+class DataTrainingConfig:
+    root_dir: Path
+    data_path: Path
+    test_size: float
+    monitor: str
+    verbose: int
+    save_best_only: bool
+    mode: str
+    epochs: int
+    validation_split: float
+    model: str

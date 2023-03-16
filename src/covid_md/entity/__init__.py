@@ -1,1 +1,2 @@
-from covid_md.entity.config_entity import (DataPreprocessingConfig)
+from covid_md.entity.config_entity import (DataPreprocessingConfig,
+                                           DataTrainingConfig)
