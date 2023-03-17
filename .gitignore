@@ -128,5 +128,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 collected_data/*
-artifacts/data_preprocess
-artifacts/data_training
+artifacts/data_preprocess/*
+artifacts/data_training/*

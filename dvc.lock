@@ -1,0 +1,41 @@
+schema: '2.0'
+stages:
+  data_preprocessing:
+    cmd: python src/covid_md/pipeline/stage_01_data_preprocessing.py
+    deps:
+    - path: configs/config.yaml
+      md5: 74ea96cf4abe23b9bd3c67635232331a
+      size: 374
+    - path: src/covid_md/pipeline/stage_01_data_preprocessing.py
+      md5: 60b4224b48bf464ccf6861e4b9c2bc7b
+      size: 638
+    outs:
+    - path: artifacts/data_preprocess/data.npy
+      md5: 26571a98e5c63758cf2505ebd0405a8d
+      size: 684720128
+    - path: artifacts/data_preprocess/target.npy
+      md5: d20010eca60e57ce0dfbbb71ba16eed0
+      size: 68600
+  data_training:
+    cmd: python src/covid_md/pipeline/stage_02_data_training.py
+    deps:
+    - path: artifacts/data_preprocess/data.npy
+      md5: 26571a98e5c63758cf2505ebd0405a8d
+      size: 684720128
+    - path: artifacts/data_preprocess/target.npy
+      md5: d20010eca60e57ce0dfbbb71ba16eed0
+      size: 68600
+    - path: configs/config.yaml
+      md5: 74ea96cf4abe23b9bd3c67635232331a
+      size: 374
+    - path: params.yaml
+      md5: 327e4bab5a9808bf2010a9d3e2c7f329
+      size: 179
+    - path: src/covid_md/pipeline/stage_02_data_training.py
+      md5: 40d780c324b245d2dbd2287452ad13ea
+      size: 1304
+    outs:
+    - path: artifacts/data_training
+      md5: d678f0d55f598f49bb0c3d84c3171534.dir
+      size: 238775379
+      nfiles: 35
