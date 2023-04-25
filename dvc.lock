@@ -36,6 +36,6 @@ stages:
       size: 1304
     outs:
     - path: artifacts/data_training
-      md5: d678f0d55f598f49bb0c3d84c3171534.dir
-      size: 238775379
-      nfiles: 35
+      md5: 7c9403491a447f664e05dc8bf00fd283.dir
+      size: 170553539
+      nfiles: 25

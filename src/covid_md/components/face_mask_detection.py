@@ -26,8 +26,8 @@ class MaskDetection:
         classifier= self.config.face_classifier
         face_classifier= cv2.CascadeClassifier(classifier)
         source= cv2.VideoCapture(0)
-        labels_dict= {1: 'Mask', 0: 'No Mask'}
-        color_dict= {1: (0,255,0), 0:(0,0,255)}
+        labels_dict= {0: 'Mask', 1: 'No Mask'}
+        color_dict= {0: (0,255,0), 1:(0,0,255)}
         logger.info("here are your hyper parameters...")
         return face_classifier, source, labels_dict, color_dict
     def face_mask_detection(seld, model, face_classifier, source, labels_dict, color_dict):
